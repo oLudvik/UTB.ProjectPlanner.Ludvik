@@ -1,0 +1,17 @@
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.AssemblyInfo.cs
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.deps.json
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.dll
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.pdb
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.dll
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.pdb
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.csproj.CopyComplete
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.dll
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\refint\UTB.ProjectPlanner.Infrastructure.dll
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.pdb
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\ref\UTB.ProjectPlanner.Infrastructure.dll
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\bin\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.runtimeconfig.json
+C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Infrastructure\obj\Debug\net7.0\UTB.ProjectPlanner.Infrastructure.genruntimeconfig.cache

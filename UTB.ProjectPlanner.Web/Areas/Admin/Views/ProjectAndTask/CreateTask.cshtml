@@ -1,0 +1,23 @@
+﻿@model ProjectTask
+
+@{
+    ViewData["Title"] = "Task - Create";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="CreateTask" method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name">Name</label>
+        <input class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Description">Description</label>
+        <input class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Status">Status</label>
+        <input class="form-control" asp-for="Status">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

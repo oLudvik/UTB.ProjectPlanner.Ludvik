@@ -1,0 +1,35 @@
+﻿@model List<ProjectAndTaskViewModel>
+
+@{
+    ViewData["Title"] = "Users Projects and Tasks Administration";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    <table>
+        <thead>
+            <tr>
+                <th>@nameof(ProjectAndTaskViewModel.Project)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; ++i)
+            {
+                <tr>
+                    <td><u>@Model[i].Project.Name</u></td>
+                    <td>
+                        @if (Model[i].ProjectTasks.Count > 0)
+                        {
+                            for (int j = 0; j < Model[i].ProjectTasks.Count; ++j)
+                            {
+                        <tr>
+                            <td>@Model[i].ProjectTasks[j].Name</td>
+                        </tr>
+                            }
+                        }
+                </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
