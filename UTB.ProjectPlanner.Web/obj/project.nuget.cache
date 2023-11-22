@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LaRgWUC41Nx0d/Q7v886IRH/5n6y1jI1cd3DY2HNssJs4PafkGUt6ZmkGF3g4Xmbjvbe/vvCddwn+ZJJ0nES+w==",
+  "dgSpecHash": "pRr3LcRUFJAQhLyQtlkZzWp4gI0d63JTkgHvqyfFnfciSUiGCRfZ5WpL78IABmJujexLxlgTykdkw0GhHyO65g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Web\\UTB.ProjectPlanner.Web.csproj",
+  "projectFilePath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Web\\UTB.ProjectPlanner.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ludva\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ludva\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

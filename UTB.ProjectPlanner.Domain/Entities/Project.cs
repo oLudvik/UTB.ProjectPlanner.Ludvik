@@ -10,16 +10,12 @@ namespace UTB.ProjectPlanner.Domain.Entities
 {
     public class Project : Entity<int>
     {
-        [Required]
-        [StringLength(70)]
         public string Name { get; set; }
-        [Required]
         public string Description { get; set; }
-        [ForeignKey(nameof(WebUser))]
-        public WebUser Owner { get; set; }
-
-        //public List<WebUser>? Helpers { get; set; }
         public DateTime Deadline { get; set; }
         public string Status {  get; set; }
+        public virtual WebUser Owner { get; set; }
+        public virtual ICollection<ProjectTask> ProjectTasks { get; set; }
+
     }
 }

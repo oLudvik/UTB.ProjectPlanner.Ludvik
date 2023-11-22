@@ -11283,11 +11283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
       "projectName": "UTB.ProjectPlanner.Tests",
-      "projectPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
+      "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
       "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Tests\\obj\\",
+      "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",

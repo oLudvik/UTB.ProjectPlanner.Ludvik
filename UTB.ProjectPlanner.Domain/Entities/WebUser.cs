@@ -10,13 +10,11 @@ namespace UTB.ProjectPlanner.Domain.Entities
 {
     public class WebUser : Entity<int>
     {
-        [Required]
-        [StringLength(20)]
         public string UserName { get; set; }
-        [Required]
         public string Password { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Theme { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
     }
 }

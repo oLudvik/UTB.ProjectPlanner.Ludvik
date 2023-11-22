@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LhPxZFM9xiGZag8cuHqur0j+UaTWlw+/SE6R0WYqVT6El1ykhz+LY/tpLI5CaVGXXP+S10LtwGY2PtsEb3pS5A==",
+  "dgSpecHash": "cF9EO8ev3I5b19I4sgrWYQus/zelbpuhxn3oO2B1x0PVrxHbEFSS56KgIc0A/fG14NuDFu4MyrqvP4yqQef3uA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ludva\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ludva\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

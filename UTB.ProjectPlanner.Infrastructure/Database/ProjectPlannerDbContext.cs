@@ -10,9 +10,9 @@ namespace UTB.ProjectPlanner.Infrastructure.Database
 {
     public class ProjectPlannerDbContext : DbContext
     {
-        public DbSet<Project> Products { get; set; }
-        public DbSet<ProjectTask> Carousels { get; set; }
         public DbSet<WebUser> WebUsers { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectTask> ProjectTasks { get; set; }
 
 
         public ProjectPlannerDbContext(DbContextOptions options) : base(options)

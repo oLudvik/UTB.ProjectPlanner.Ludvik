@@ -11035,11 +11035,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
       "projectName": "UTB.ProjectPlanner.Application",
-      "projectPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
+      "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
       "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Application\\obj\\",
+      "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11056,11 +11056,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
-              "projectPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
+            "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
+              "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
             },
-            "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj"
+            "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj"
             }
           }
         }

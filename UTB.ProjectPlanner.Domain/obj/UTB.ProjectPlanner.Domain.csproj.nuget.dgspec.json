@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {}
+    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
+    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
         "projectName": "UTB.ProjectPlanner.Domain",
-        "projectPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
+        "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
         "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludva\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner\\UTB.ProjectPlanner.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",

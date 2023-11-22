@@ -12,3 +12,17 @@ C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Domain\ob
 C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Domain\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.runtimeconfig.json
 C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.csproj.AssemblyReference.cache
 C:\Users\ludva\Desktop\SKOLA\web\UTB.ProjectPlanner\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.genruntimeconfig.cache
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.deps.json
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.runtimeconfig.json
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.dll
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\bin\Debug\net7.0\UTB.ProjectPlanner.Domain.pdb
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.csproj.AssemblyReference.cache
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.AssemblyInfoInputs.cache
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.AssemblyInfo.cs
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.dll
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\refint\UTB.ProjectPlanner.Domain.dll
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.pdb
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\UTB.ProjectPlanner.Domain.genruntimeconfig.cache
+C:\Users\ludva\Desktop\PROJECTPLANNER FR\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Domain\obj\Debug\net7.0\ref\UTB.ProjectPlanner.Domain.dll
