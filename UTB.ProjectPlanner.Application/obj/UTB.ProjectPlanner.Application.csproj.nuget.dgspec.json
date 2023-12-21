@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj": {}
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj": {
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
         "projectName": "UTB.ProjectPlanner.Application",
-        "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
-        "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\obj\\",
+        "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\UTB.ProjectPlanner.Application.csproj",
+        "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
-                "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
+              "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
+                "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
               },
-              "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj"
+              "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj"
               }
             }
           }
@@ -46,36 +46,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.6, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -92,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
         "projectName": "UTB.ProjectPlanner.Domain",
-        "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
-        "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj",
+        "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,36 +101,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.6, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -177,21 +117,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj",
         "projectName": "UTB.ProjectPlanner.Infrastructure",
-        "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\UTB.ProjectPlanner.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -205,8 +145,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
-                "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
+              "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj": {
+                "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Domain\\UTB.ProjectPlanner.Domain.csproj"
               }
             }
           }
@@ -221,17 +161,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.13, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.13, )"
             },
@@ -240,14 +174,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.6, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -266,11 +192,14 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - UTB.ProjectPlanner.Web</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UTB.ProjectPlanner.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    @await RenderSectionAsync("Styles", required: false)
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; /* Remove default body margin */
+            background-color: #F3EFEF;
+        }
+
+        nav {
+            background-color: #EFD4CB;
+            text-align: center;
+            padding: 5px;
+            width: 100%; /* Take up the full width */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #D9D5C8">
-            <div class="container-fluid" style="color: #000000">
-                <div class="d-inline-flex" style="color: inherit">
-                    <a class="nav-link" style="color: inherit" asp-area="Admin" asp-controller="WebUser" asp-action="Index">Users</a>
-                    <a class="nav-link" style="color: inherit" asp-area="Admin" asp-controller="ProjectAndTask" asp-action="Index">Projects and Tasks</a>
-                </div>
-                <a class="navbar-brand" style="color: inherit" href="#">Project Plannert</a>
-                <div class="d-inline-flex" style="color: inherit">
-                    <a class="nav-link" style="color: inherit" asp-area="Admin" asp-controller="WebUser" asp-action="Index">Users</a>
-                    <a class="nav-link" style="color: inherit" asp-area="Admin" asp-controller="ProjectAndTask" asp-action="Index">Projects and Tasks</a>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated == true && (User.IsInRole(nameof(Roles.Planner))))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Planner" asp-controller="Project" asp-action="Index">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Planner" asp-controller="Project" asp-action="Index">Projects</a>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated == true && (User.IsInRole(nameof(Roles.Admin)) || User.IsInRole(nameof(Roles.Manager))))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Product" asp-action="Index">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="OrderItem" asp-action="Index">OrderItems</a>
+                            </li>
+                        }
+                    </ul>
+
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Project Planner</a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Logged as @User.Identity.Name</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-dark" asp-area="Security" asp-controller="Account" asp-action="Logout"><i class="bi bi-person-slash me-1"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>

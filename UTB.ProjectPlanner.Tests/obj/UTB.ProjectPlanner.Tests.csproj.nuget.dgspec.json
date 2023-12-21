@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj": {}
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj": {
+    "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
         "projectName": "UTB.ProjectPlanner.Tests",
-        "projectPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
-        "packagesPath": "C:\\Users\\ludva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludva\\Desktop\\PROJECTPLANNER FR\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\UTB.ProjectPlanner.Tests.csproj",
+        "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oliver\\Desktop\\SKOLA\\web\\UTB.ProjectPlanner.Ludvik\\UTB.ProjectPlanner.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ludva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,19 +40,7 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[7.0.13, )"
             },
@@ -60,17 +48,9 @@
               "target": "Package",
               "version": "[17.7.1, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "Moq": {
               "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.6, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -105,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

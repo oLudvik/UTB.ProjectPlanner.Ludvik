@@ -14,7 +14,10 @@ namespace UTB.ProjectPlanner.Domain.Entities
         public string Description { get; set; }
         public DateTime Deadline { get; set; }
         public string Status { get; set; }
-        public virtual Project Project { get; set; }
+
+        [ForeignKey(nameof(Project))]
+        public int ProjectId { get; set; }
+        public Project? Project { get; set; }
 
     }
 }
