@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Styled Cards</title>
+    <style>
+        /* Custom class for card background color */
+        .custom-card {
+            background-color: #EFD4CB; /* Filler color for the card */
+            color: #000; /* Set text color */
+        }
+
+        /* Set the width and height for each card */
+        .card {
+            width: 400px; /* Updated width */
+            height: 80px; /* Updated height */
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style for the text */
+        .card-text {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px; /* Add margin to separate text from button */
+        }
+
+        /* Style for the description */
+        .description-text {
+            font-size: 14px;
+            margin-left: 10px; /* Add margin to separate description from button */
+            background-color: #F5E5DC; /* Lighter background color */
+        }
+
+        /* Inner divs */
+        .inner-divs {
+            display: flex;
+            flex-direction: row; /* Arrange inner divs in a row */
+            justify-content: space-between; /* Space them evenly */
+            width: 100%; /* Take up the full width of the outer div */
+        }
+
+        /* Border for the left inner div */
+        .bordered-div {
+            border: 2px solid #000; /* Black border */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card 1 -->
+    <div class="card custom-card ml-3">
+        <!-- Inner divs for the button and description -->
+        <div class="inner-divs">
+            <div class="bordered-div">
+                <a asp-action="Login" class="btn active" type="button">
+                    <span class="card-text">This is Card 1</span>
+                </a>
+            </div>
+
+            <div class="description-text">
+                Description text goes here
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (optional, for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

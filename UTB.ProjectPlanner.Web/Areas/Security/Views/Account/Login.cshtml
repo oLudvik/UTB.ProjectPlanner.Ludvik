@@ -1,0 +1,101 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Optional: Add some styling for the centered box */
+        .center-box {
+            background-color: #EFD4CB;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+            height: auto;
+        }
+
+        .box-item {
+            margin-bottom:5px;
+        }
+
+        /* Ensure full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0; /* Remove default body margin */
+            background-color: #F3EFEF;
+        }
+
+        /* Center content vertically and horizontally */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        header {
+            background-color: #EFD4CB;
+            text-align: center;
+            padding: 5px;
+            width: 100%; /* Take up the full width */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed-top">
+        <h1 class="display-4">Project Planner</h1>
+    </header>
+
+    <div class="center-box">
+        <form asp-action="Login" method="post" class="form-signin">
+
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+            <hr>
+            @{
+                if (Model?.LoginFailed == true)
+                {
+                    <div class="text-danger">Login Failed!</div>
+                }
+            }
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <input asp-for="Username" type="text" id="inputUsername" class="form-control box-item" placeholder="Usename" autofocus="">
+            <span asp-validation-for="Username" class="text-danger"></span>
+            <input asp-for="Password" type="password" id="inputPassword" class="form-control box-item" placeholder="Password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <div class="text-center box-item" >
+                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+            </div>
+
+
+            <!-- <p>Don't have an account!</p>  -->
+            <a asp-action="Register" class="btn btn-primary btn-block text-white" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</a>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (optional, for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
