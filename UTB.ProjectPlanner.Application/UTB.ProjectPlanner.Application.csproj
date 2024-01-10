@@ -11,10 +11,4 @@
 		<ProjectReference Include="..\UTB.ProjectPlanner.Infrastructure\UTB.ProjectPlanner.Infrastructure.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Abstraction\Admin\" />
-	  <Folder Include="Implementation\Admin\" />
-	  <Folder Include="ViewModels\Admin\" />
-	</ItemGroup>
-
 </Project>

@@ -1,68 +1,127 @@
-﻿<!DOCTYPE html>
+﻿@model List<ProjectProjectTaskViewModel>
+@{
+    ViewData["Title"] = "Project - index";
+    int i = 0;
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>Styled Cards</title>
+    <title>Responsive Horizontal Stack of Cards</title>
     <style>
         /* Custom class for card background color */
         .custom-card {
-            background-color: #EFD4CB; /* Filler color for the card */
             color: #000; /* Set text color */
+            border-radius: 8px; /* Add border radius for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle lift */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        /* Specific class for background color */
+        .card-background-0 {
+            background-color: #FFD3B6; /* Pastel orange */
+        }
+
+        .card-background-1 {
+            background-color: #B5EAD7; /* Pastel green */
+        }
+
+        .card-background-2 {
+            background-color: #FFC9C1; /* Pastel pink */
+        }
+
+        .card-background-3 {
+            background-color: #AED9E0; /* Pastel blue */
         }
 
         /* Set the width and height for each card */
         .card {
-            width: 400px; /* Updated width */
-            height: 80px; /* Updated height */
+            width: 100%; /* Take full width initially */
+            height: 150px; /* Set a fixed height */
             display: flex;
+            flex-direction: column; /* Stack content vertically */
             align-items: center;
+            justify-content: space-between; /* Distribute space evenly between child elements */
+            padding: 15px; /* Add padding to space content from edges */
+            margin-bottom: 20px; /* Add margin to prevent sticking to walls */
+            overflow-y:scroll;
         }
 
         /* Style for the text */
         .card-text {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
-            margin-left: 10px; /* Add margin to separate text from button */
+            margin-bottom: 5px; /* Add margin between text and description */
         }
 
         /* Style for the description */
         .description-text {
             font-size: 14px;
-            margin-left: 10px; /* Add margin to separate description from button */
-            background-color: #F5E5DC; /* Lighter background color */
+            padding: 8px; /* Add padding for better readability */
+            border-radius: 4px; /* Add border radius for rounded corners */
         }
 
-        /* Inner divs */
-        .inner-divs {
-            display: flex;
-            flex-direction: row; /* Arrange inner divs in a row */
-            justify-content: space-between; /* Space them evenly */
-            width: 100%; /* Take up the full width of the outer div */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: inherit;
+            text-decoration: none;
         }
 
-        /* Border for the left inner div */
-        .bordered-div {
-            border: 2px solid #000; /* Black border */
-        }
+
     </style>
 </head>
 <body>
 
-    <!-- Card 1 -->
-    <div class="card custom-card ml-3">
-        <!-- Inner divs for the button and description -->
-        <div class="inner-divs">
-            <div class="bordered-div">
-                <a asp-action="Login" class="btn active" type="button">
-                    <span class="card-text">This is Card 1</span>
-                </a>
-            </div>
+    <div class="container">
+        <div class="row">
+            @{
 
-            <div class="description-text">
-                Description text goes here
-            </div>
+                for(; i < Model.Count; i++)
+                {
+                    <div class="col-md-6 col-lg-3">
+                    <a asp-action="Show" asp-route-Id="@Model[i].Project.Id">
+                        <div class="@("card custom-card card-background-" + i%4)">
+                        <!-- Inner divs for the button and description -->
+                        <div class="inner-divs">
+                            <div>
+                                <span class="card-text">@Model[i].Project.Name</span>
+                            </div>
+
+                            <div class="description-text">
+                                @Model[i].Project.Description
+                            </div>
+                            <hr />
+                            @foreach (var item in Model[i].ProjectTasks) {
+                                <a asp-controller="Task" asp-action="Show" asp-route-Id="@item.Id">
+                                <p>@item.Name</p>
+                                </a>
+                                <br />
+                            }
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                    
+                }
+
+                <div class="col-md-6 col-lg-3">
+                <a asp-action="Create">
+                    <div class="@("card custom-card card-background-" + i%3)" style="overflow-y: hidden">
+                        <div style="font-size:5rem">+</div>
+                    </div>
+                </a>
+                </div>
+
+            }
+            
+
         </div>
     </div>
 

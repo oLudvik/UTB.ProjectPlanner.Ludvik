@@ -7,6 +7,8 @@ using UTB.ProjectPlanner.Application.Implementation;
 using UTB.ProjectPlanner.Infrastructure.Identity;
 using UTB.ProjectPlanner.Application.Abstraction.Planner;
 using UTB.ProjectPlanner.Application.Implementation.Planner;
+using UTB.ProjectPlanner.Application.Abstraction.Admin;
+using UTB.ProjectPlanner.Application.Implementation.Admin;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -64,6 +66,8 @@ builder.Services.AddScoped<IAccountService, AccountIdentityService>();
 builder.Services.AddScoped<ISecurityService, SecurityIdentityService>();
 
 builder.Services.AddScoped<IProjectPlannerService, ProjectPlannerService>();
+builder.Services.AddScoped<IProjectTaskService, ProjectTaskService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 
 var app = builder.Build();
 
@@ -86,8 +90,16 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+//app.MapControllerRoute(
+//      name: "default",
+//      pattern: "{area=Planner}/{controller=Project}/{action=Index}/{id?}");
+
 app.MapControllerRoute(
-      name: "default",
-      pattern: "{area=Planner}/{controller=Project}/{action=Index}/{id?}");
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

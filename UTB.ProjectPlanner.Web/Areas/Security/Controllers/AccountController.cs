@@ -10,6 +10,7 @@ using UTB.ProjectPlanner.Infrastructure.Identity.Enums;
 using Microsoft.AspNetCore.Authorization;
 using UTB.ProjectPlanner.Application.Abstraction.Account;
 using UTB.ProjectPlanner.Web.Areas.Planner.Controllers;
+using UTB.ProjectPlanner.Web.Controllers;
 
 namespace UTB.ProjectPlanner.Web.Areas.Security.Controllers
 {
@@ -35,7 +36,6 @@ namespace UTB.ProjectPlanner.Web.Areas.Security.Controllers
             if (ModelState.IsValid)
             {
                 string[] errors = await accountService.Register(registerVM, Roles.Planner);
-
                 if (errors == null)
                 {
                     LoginViewModel loginVM = new LoginViewModel()
@@ -46,8 +46,8 @@ namespace UTB.ProjectPlanner.Web.Areas.Security.Controllers
 
                     bool isLogged = await accountService.Login(loginVM);
                     if (isLogged)
-                        return RedirectToAction(nameof(ProjectController.Index), nameof(ProjectController).Replace(nameof(Controller), String.Empty), new { area = "Planner" });
-                    //return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).Replace(nameof(Controller), String.Empty), new { area = String.Empty });
+                        return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).Replace(nameof(Controller), String.Empty), new { area = String.Empty });
+                    //return RedirectToAction(nameof(ProjectController.Index), nameof(ProjectController).Replace(nameof(Controller), String.Empty), new { area = "Planner" });
                     else
                         return RedirectToAction(nameof(Login));
                 }
@@ -55,9 +55,7 @@ namespace UTB.ProjectPlanner.Web.Areas.Security.Controllers
                 {
                     //error to ViewModel
                 }
-
             }
-
             return View(registerVM);
         }
 
@@ -73,8 +71,8 @@ namespace UTB.ProjectPlanner.Web.Areas.Security.Controllers
             {
                 bool isLogged = await accountService.Login(loginVM);
                 if (isLogged)
-                    return RedirectToAction(nameof(ProjectController.Index), nameof(ProjectController).Replace(nameof(Controller), String.Empty), new { area = "Planner" });
-                //return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).Replace(nameof(Controller), String.Empty), new { area = String.Empty });
+                    //return RedirectToAction(nameof(ProjectController.Index), nameof(ProjectController).Replace(nameof(Controller), String.Empty), new { area = "Planner" });
+                    return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).Replace(nameof(Controller), String.Empty), new { area = String.Empty });
 
                 loginVM.LoginFailed = true;
             }

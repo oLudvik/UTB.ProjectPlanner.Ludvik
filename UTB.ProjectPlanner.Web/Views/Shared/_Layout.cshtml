@@ -14,7 +14,6 @@
         html, body {
             height: 100%;
             margin: 0; /* Remove default body margin */
-            background-color: #F3EFEF;
         }
 
         nav {
@@ -26,7 +25,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #FCECE6">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -37,17 +36,11 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="Planner" asp-controller="Project" asp-action="Index">Projects</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Planner" asp-controller="Project" asp-action="Index">Projects</a>
-                            </li>
                         }
                         @if (User.Identity.IsAuthenticated == true && (User.IsInRole(nameof(Roles.Admin)) || User.IsInRole(nameof(Roles.Manager))))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Product" asp-action="Index">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="OrderItem" asp-action="Index">OrderItems</a>
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin stuff</a>
                             </li>
                         }
                     </ul>

@@ -18,8 +18,56 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Oliver\Desktop\SKOLA\web\UTB.ProjectPlanner.Ludvik\UTB.ProjectPlanner.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/Admin/UpdateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXBkYXRlUHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/Admin/UpdateTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXBkYXRlVGFzay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/Admin/UpdateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXBkYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Project/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xQcm9qZWN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Project/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xQcm9qZWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Project/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xQcm9qZWN0XFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Project/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xQcm9qZWN0XFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Task/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xUYXNrXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Task/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xUYXNrXFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/Task/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5lclxWaWV3c1xUYXNrXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Planner/Views/_ViewImports.cshtml]
@@ -44,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Areas/Security/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VjdXJpdHlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Oliver/Desktop/SKOLA/web/UTB.ProjectPlanner.Ludvik/UTB.ProjectPlanner.Web/Views/Shared/Error.cshtml]
