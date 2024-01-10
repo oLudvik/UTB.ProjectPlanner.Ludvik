@@ -1,0 +1,166 @@
+﻿@model ProjectProjectTaskViewModel
+@{
+    ViewData["Title"] = "Project - show";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Showcase</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .entity-container {
+            background-color: #f9f9f9;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 50px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s;
+        }
+
+            .entity-container:hover {
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            }
+
+        .entity-info {
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .update-delete-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+            .update-delete-container div {
+                padding: 10px 15px;
+                color: #fff;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+
+                .update-delete-container div:hover {
+                    transform: scale(1.05);
+                }
+
+        .update-container {
+            background: linear-gradient(to right, #a5c6e6, #e6f1f9);
+        }
+
+        .create-container {
+            background: linear-gradient(to right, #ffb366, #ffd699);
+            color: #fff;
+        }
+
+        .delete-container {
+            background: linear-gradient(to right, #e6b9d4, #f7d9ec);
+        }
+
+        .subentities-container {
+            margin-top: 20px;
+        }
+
+        .subentities-table {
+            width: 100%;
+        }
+
+            .subentities-table th,
+            .subentities-table td {
+                padding: 12px;
+                border: 1px solid #e5e5e5;
+                text-align: left;
+                transition: background-color 0.3s;
+            }
+
+            .subentities-table th {
+                background: linear-gradient(to right, #b5e5c5, #dff2e1);
+                color: #fff;
+            }
+
+            .subentities-table tr:hover {
+                background-color: #f4f4f4;
+            }
+    </style>
+</head>
+<body>
+    @{
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="entity-container">
+                    <div class="entity-info">
+                        <p>Name: @Model.Project.Name</p>
+                        <p>Description: @Model.Project.Description</p>
+                        <p>Deadline: @Model.Project.Deadline</p>
+                        <p>Status: @Model.Project.Status</p>
+
+                        <div class="update-delete-container">
+                            <a asp-action="Update" asp-route-Id="@Model.Project.Id">
+                                <div class="update-container">Update</div>
+                            </a>
+                            <a asp-controller="Task" asp-action="Create" asp-route-Id="@Model.Project.Id">
+                                <div class="create-container">new Task</div>
+                            </a>
+                            <a asp-action="Delete" asp-route-Id="@Model.Project.Id">
+                                <div class="delete-container">Delete</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="subentities-container">
+                        <h3 class="mb-4">Tasks</h3>
+                        <table class="subentities-table">
+                            <thead>
+                                <tr>
+                                    <th>Subentity Name</th>
+                                    <th>Description</th>
+                                    <th>Deadline</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var task in Model.ProjectTasks)
+                                {
+                                <tr>
+                                    <td>
+                                         <a asp-controller="Task" asp-action="Show" asp-route-Id="@task.Id">
+                                            @task.Name
+                                        </a>
+                                    </td>
+                                    <td>@task.Description</td>
+                                    <td>@task.Deadline</td>
+                                    <td>@task.Status</td>
+                                    <td>
+                                        <div class="update-delete-container">
+                                            <a asp-controller="Task" asp-action="Update" asp-route-Id="@task.Id">
+                                                <div class="update-container">Update</div>
+                                            </a>
+                                            <a asp-controller="Task" asp-action="Delete" asp-route-Id="@task.Id">
+                                                <div class="delete-container">Delete</div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+
+    <!-- Bootstrap JS and Popper.js CDN (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
