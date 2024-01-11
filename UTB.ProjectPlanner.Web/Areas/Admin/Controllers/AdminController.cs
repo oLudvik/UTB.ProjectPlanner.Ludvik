@@ -27,9 +27,10 @@ namespace UTB.ProjectPlanner.Web.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult UpdateUser()
+        public IActionResult UpdateUser(int Id)
         {
-            return View();
+            User u = _adminService.GetUser(Id);
+            return View(u);
         }
         [HttpPost]
         public IActionResult UpdateUser(User user)
@@ -45,9 +46,10 @@ namespace UTB.ProjectPlanner.Web.Areas.Admin.Controllers
 
 
         [HttpGet]
-        public IActionResult UpdateProject()
+        public IActionResult UpdateProject(int Id)
         {
-            return View();
+            Project p = _adminService.GetProject(Id);
+            return View(p);
         }
         [HttpPost]
         public IActionResult UpdateProject(Project project)
@@ -63,9 +65,10 @@ namespace UTB.ProjectPlanner.Web.Areas.Admin.Controllers
 
 
         [HttpGet]
-        public IActionResult UpdateTask()
+        public IActionResult UpdateTask(int Id)
         {
-            return View();
+            ProjectTask pt = _adminService.GetTask(Id);
+            return View(pt);
         }
         [HttpPost]
         public IActionResult UpdateTask(ProjectTask task)

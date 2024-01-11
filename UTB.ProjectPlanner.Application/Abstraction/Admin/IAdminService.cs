@@ -18,5 +18,9 @@ namespace UTB.ProjectPlanner.Application.Abstraction.Admin
         void DeleteProject(int Id);
         void UpdateTask(ProjectTask task);
         void DeleteTask(int Id);
+
+        User GetUser(int Id);
+        Project GetProject(int Id);
+        ProjectTask GetTask(int Id);
     }
 }

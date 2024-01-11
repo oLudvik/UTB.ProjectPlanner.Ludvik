@@ -105,5 +105,21 @@ namespace UTB.ProjectPlanner.Application.Implementation.Admin
             _ProjectPlannerDbContext.ProjectTasks.Remove(_ProjectPlannerDbContext.ProjectTasks.First(p => p.Id == Id));
             _ProjectPlannerDbContext.SaveChanges();
         }
+
+        public User GetUser(int Id)
+        {
+            return _ProjectPlannerDbContext.Users.First(u => u.Id == Id);
+
+        }
+        public Project GetProject(int Id)
+        {
+            return _ProjectPlannerDbContext.Projects.First(u => u.Id == Id);
+
+        }
+        public ProjectTask GetTask(int Id)
+        {
+            return _ProjectPlannerDbContext.ProjectTasks.First(u => u.Id == Id);
+
+        }
     }
 }
