@@ -1,6 +1,150 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<EverythingViewModel>
 @{
+    ViewData["Title"] = "Admin stuff";
 }
-Hello
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .sub-table {
+            margin-left: 20px;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .entity-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .entity-name {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Entity Hierarchy</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Projects and tasks</th>
+            </tr>
+        </thead>
+@{
+            @foreach (EverythingViewModel evm in Model)
+            {
+
+                <tbody>
+                    <tr>
+                <td>
+                    <div class="entity-container">
+                        <span class="entity-name">@evm.User.UserName</span>
+                        <a asp-action="UpdateUser" asp-route-Id="@evm.User.Id">
+                            <div class="btn">Update</div>
+                        </a>
+                        <a asp-action="DeleteUser" asp-route-Id="@evm.User.Id">
+                            <div class="btn">Delete</div>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <table class="sub-table">
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Tasks</th>
+                            </tr>
+                        </thead>
+
+                                @foreach(ProjectAndTasks pnt in evm.ProjectAndTasks)
+                                {
+                                    
+                                
+                                <tbody>
+                            <tr>
+                                <td>
+                                    <div class="entity-container">
+                                        <span class="entity-name">@pnt.Project</span>
+                                                    <a asp-action="UpdateProject" asp-route-Id="@pnt.Project.Id">
+                                                <div class="btn">Update</div>
+                                            </a>
+                                            <a asp-action="DeleteProject" asp-route-Id="@pnt.Project.Id">
+                                                <div class="btn">Delete</div>
+                                            </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul>
+                                                    @foreach(ProjectTask pt in pnt.Tasks)
+                                                    {
+                                                        
+                                                    <li>
+                                            <div class="entity-container">
+                                                <span class="entity-name">@pt.Name</span>
+                                                                <a asp-action="UpdateTask" asp-route-Id="@pt.Id">
+                                                                    <div class="btn">Update</div>
+                                                                </a>
+                                                                <a asp-action="DeleteTask" asp-route-Id="@pt.Id">
+                                                                    <div class="btn">Delete</div>
+                                                                </a>
+                                            </div>
+                                        </li>
+                                                    }
+                                       
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!-- Add more subentities and subsubentities as needed -->
+                        </tbody>
+                        }
+                    </table>
+                </td>
+            </tr>
+            <!-- Add more main entities as needed -->
+        </tbody>
+        }
+}
+    </table>
+
+</body>
+</html>

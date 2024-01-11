@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UTB.ProjectPlanner.Application.ViewModels.Admin;
+using UTB.ProjectPlanner.Domain.Entities;
+using UTB.ProjectPlanner.Infrastructure.Identity;
 
 namespace UTB.ProjectPlanner.Application.Abstraction.Admin
 {
     public interface IAdminService
     {
-        EverythingViewModel Index();
-        void UpdateUser();
-        void DeleteUser();
-        void UpdateProject();
-        void DeleteProject();
-        void UpdateTask();
-        void DeleteTask();
+        IList<EverythingViewModel> Index();
+        void UpdateUser(User user);
+        void DeleteUser(int Id);
+        void UpdateProject(Project project);
+        void DeleteProject(int Id);
+        void UpdateTask(ProjectTask task);
+        void DeleteTask(int Id);
     }
 }

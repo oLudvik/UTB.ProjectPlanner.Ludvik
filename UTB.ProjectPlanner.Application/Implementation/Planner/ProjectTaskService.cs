@@ -22,7 +22,16 @@ namespace UTB.ProjectPlanner.Application.Implementation.Planner
         }
         public void Create(ProjectTask projectTask, int UserId)
         {
-            projectTask.Id = _ProjectPlannerDbContext.ProjectTasks.OrderByDescending(pt => pt.Id).ToList()[0].Id + 1;
+            List<ProjectTask> pt = _ProjectPlannerDbContext.ProjectTasks.OrderByDescending(pt => pt.Id).ToList();
+            int xddId;
+            if(pt.Count > 0)
+            {
+                xddId = pt[0].Id + 1;
+            } else
+            {
+                xddId = 0;
+            }
+            projectTask.Id = xddId;
             _ProjectPlannerDbContext.ProjectTasks.Add(projectTask);
             _ProjectPlannerDbContext.SaveChanges();
         }

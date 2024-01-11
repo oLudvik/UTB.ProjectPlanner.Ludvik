@@ -25,12 +25,12 @@ namespace UTB.ProjectPlanner.Web.Areas.Planner.Controllers
         }
         public IActionResult Index()
         {
-            List<ProjectProjectTaskViewModel> l = _projectPlannerService.Index(int.Parse(_userManager.GetUserId(User)) -1);
+            List<ProjectProjectTaskViewModel> l = _projectPlannerService.Index(int.Parse(_userManager.GetUserId(User)));
             return View(l);
         }
 
         public IActionResult Show(int id) {
-            ProjectProjectTaskViewModel p = _projectPlannerService.Show(id, int.Parse(_userManager.GetUserId(User)) - 1);
+            ProjectProjectTaskViewModel p = _projectPlannerService.Show(id, int.Parse(_userManager.GetUserId(User)));
             return View(p);
         }
 
@@ -43,7 +43,8 @@ namespace UTB.ProjectPlanner.Web.Areas.Planner.Controllers
         [HttpPost]
         public IActionResult Create(Project project)
         {
-            _projectPlannerService.Create(project, int.Parse(_userManager.GetUserId(User)) - 1);
+            Console.WriteLine(int.Parse(_userManager.GetUserId(User)));
+            _projectPlannerService.Create(project, int.Parse(_userManager.GetUserId(User)));
             return RedirectToAction(nameof(ProjectController.Index));
         }
 
@@ -57,12 +58,12 @@ namespace UTB.ProjectPlanner.Web.Areas.Planner.Controllers
         [HttpPost]
         public IActionResult Update(Project project)
         {
-            _projectPlannerService.Update(project, int.Parse(_userManager.GetUserId(User)) - 1);
+            _projectPlannerService.Update(project, int.Parse(_userManager.GetUserId(User)));
             return RedirectToAction(nameof(ProjectController.Index));
         }
 
         public IActionResult Delete(int id) {
-            _projectPlannerService.Delete(id, int.Parse(_userManager.GetUserId(User)) - 1);
+            _projectPlannerService.Delete(id, int.Parse(_userManager.GetUserId(User)));
             return RedirectToAction(nameof(ProjectController.Index));
         }
     }

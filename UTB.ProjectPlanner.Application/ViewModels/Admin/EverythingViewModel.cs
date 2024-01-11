@@ -13,13 +13,10 @@ namespace UTB.ProjectPlanner.Application.ViewModels.Admin
         public Project Project { get; set; }
         public IList<ProjectTask> Tasks { get; set; }
     }
-    public class UserAndProjectAndTasks
+    public class EverythingViewModel
     {
         public User User { get; set; }
         public IList<ProjectAndTasks> ProjectAndTasks { get; set; }
     }
-    public class EverythingViewModel
-    {
-        public IList<UserAndProjectAndTasks> Everything { get; set; }
-    }
+
 }
